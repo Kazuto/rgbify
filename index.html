@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: black;
+      animation: bg-transition 15s linear 0s forwards infinite;
+    }
+
+
+    @keyframes bg-transition {
+      0%, 100% {
+        background-color: red; 
+      }
+
+      12.5% {
+        background-color: orange;
+      }
+
+      25% {
+        background-color: yellow;
+      }
+
+      37.5% {
+        background-color: green;
+      }
+
+      50% {
+        background-color: blue;
+      }
+
+      62.5% {
+        background-color: indigo;
+      }
+
+      75% {
+        background-color: purple;
+      }
+    }
+  </style>
+</head>
+<body style="transition-duration: 500ms; transition-property: background; transition-timing-function: ease-in-out;">
+  <script>
+    const colorOrder = [
+      'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'
+    ]
+  </script>
+</body>
+</html>
